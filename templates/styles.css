@@ -37,5 +37,11 @@
 }
 
 #Aboutme {
-    
+    position: relative;
+    margin-top: 200px;
+}
+
+#myphoto {
+    float: right;
+    border: 1px solid black;
 }
