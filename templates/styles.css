@@ -45,3 +45,15 @@
     float: right;
     border: 1px solid black;
 }
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: wheat;
+    text-align: left;
+    border: 1px solid black;
+}
