@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>DawidSobierajskiProgramming</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
         <div class="header">
@@ -11,8 +11,7 @@
             <ul class="navbar">
                 <li class="navitem"><a href="index.html">Home</a></li>
                 <li class="navitem"><a href="sorrynotready.html">Projects</a></li>
-                <li class="navitem"><a href="sorrynotready.html">Snake Game</a></li>
-                <li class="navitem"><a href="sorrynotready.html">Contact</a></li>
+                <li class="navitem"><a href="contactpage.html">Contact</a></li>
             </ul>
         </div>
         <div id="Aboutme">
@@ -20,12 +19,23 @@
                 About me
             </h3>
             <p1 id="mepar1">
-                Hi my name is Dawid Sobierajski I am a Polish national that has been living here in the UK for the past 10 years. I have been programming sicne the start of my university degree in computer sciene in 2018
+                Hi my name is Dawid Sobierajski I am a Polish national that has been living here in the UK for the past 10 years. I have been programming sicne the start of my university degree in computer sciene in 2018.
             </p1>
+            <p2 id="mepar2">
+                Industrious, resourceful, and diligent worker, looking to enter a full time role, but flexible to any roles or 
+                working hours. A confident, amiable, and team player nature gives versatility to adapt to any environment. 
+                An aptitude to work unsupervised, learn quickly, and problem solve. Fully understands that in the service 
+                sector the customer always comes first, directly or indirectly and that good service is going ‘the extra mile’ 
+                and beyond satisfaction. A diverse work experience reflects a resilient and independent work ethic. 
+                Application to work experience opportunities demonstrates a proactive and bold disposition
+            </p2>
 
         </div>
         <div id="myphoto">
-            <img src="ME.jpg" alt="Photo of me" width="300" height="400">
+            <div class="itemx">
+                <img src="{{url_for('static',filename='ME.jpg')}}" alt="Photo of me" width="300" height="400">
+                <p>A Photo of Myself take around mid 2020 </p>
+            </div>
         </div>
         <div class="footer">
             <p>Copyright 2021-2021 Dawid Sobierajski dawidsobierajski@gmail.com</p>

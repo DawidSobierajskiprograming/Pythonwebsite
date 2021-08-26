@@ -39,11 +39,22 @@
 #Aboutme {
     position: relative;
     margin-top: 200px;
+    width: 1500px;
+}
+
+.itemx {
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+
 }
 
 #myphoto {
+    width: 312px;
     float: right;
-    border: 1px solid black;
 }
 
 
@@ -56,4 +67,18 @@
     color: wheat;
     text-align: left;
     border: 1px solid black;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+#mepar1 {
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+#mepar2 {
+    word-wrap: break-word;
+    width: 1500px;
 }
