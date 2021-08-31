@@ -2,17 +2,26 @@
 <html lang="en">
     <head>
         <title>DawidSobierajskiProgramming</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="header">
             <h1 class="bannertext">Dawid Sobierajski</h1>
             <h2 class="bannertext">Programming</h2>
-            <ul class="navbar">
-                <li class="navitem"><a href="index.html">Home</a></li>
-                <li class="navitem"><a href="sorrynotready.html">Projects</a></li>
-                <li class="navitem"><a href="contactpage.html">Contact</a></li>
-            </ul>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Projects & Codewars
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="portfolioproject.html">Personal portfolio website</a>
+                    <a href="sorrynotready.html">42 python projects</a>
+                    <a href="sorrynotready.html">Codewars account</a>
+                  </div>
+                </div>
+                <a href="contactpage.html"> Contact me</a>
+              </div>
         </div>
         <div id="Aboutme">
             <h3 id="aboutmeM">
@@ -20,21 +29,29 @@
             </h3>
             <p1 id="mepar1">
                 Hi my name is Dawid Sobierajski I am a Polish national that has been living here in the UK for the past 10 years. I have been programming sicne the start of my university degree in computer sciene in 2018.
+                <br> Since i have started programming in different languages i have come to love it more and more as i am realising how many cool things you can create in my projects drop down i have listed a few of my projects and also my CodeWars account.
             </p1>
-            <p2 id="mepar2">
-                Industrious, resourceful, and diligent worker, looking to enter a full time role, but flexible to any roles or 
-                working hours. A confident, amiable, and team player nature gives versatility to adapt to any environment. 
-                An aptitude to work unsupervised, learn quickly, and problem solve. Fully understands that in the service 
-                sector the customer always comes first, directly or indirectly and that good service is going ‘the extra mile’ 
-                and beyond satisfaction. A diverse work experience reflects a resilient and independent work ethic. 
-                Application to work experience opportunities demonstrates a proactive and bold disposition
-            </p2>
 
         </div>
         <div id="myphoto">
             <div class="itemx">
-                <img src="{{url_for('static',filename='ME.jpg')}}" alt="Photo of me" width="300" height="400">
+                <img src="ME.jpg" alt="Photo of me" width="300" height="400">
                 <p>A Photo of Myself take around mid 2020 </p>
+            </div>
+        </div>
+        <div id="Education">
+            <h3> Education</h3>
+            <div id="Tallis1">
+                Thomas Tallis Secondary school
+                <br> 2010 - 2015
+                <ul class="grades">
+                    <li>Mathmatics: C</li>
+                    <li>English Language: C</li>
+                    <li>Science: C</li>
+                    <li>Additional Science: C</li>
+                    <li>Religious Education: C</li>
+                    <li>Ard & Design: Pass</li>
+                </ul>
             </div>
         </div>
         <div class="footer">

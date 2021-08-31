@@ -21,21 +21,5 @@ def notready():
 def contact():
     return render_template("contactpage.html")
 
-
-#@app.route('/contactpage', methods=["GET", "POST"])
-#def get_contact():
-#    form=ContactForm
-#    if request.method == "POST":
-#        name = request.form["name"]
-#        email = request.form["email"]
-#        message = request.form["message"]
-#        res = pd.DataFrame({'name': name, 'email': email, 'message':message}, index=[0])
-#        res.to_csv('./contactmemessage.csv')
-#        return render_template('templates\contactpage.html', form=form)
-#    else:
-#        render_template('templates\contactpage.html', form=form)
-
-
-
 if __name__=='__main__':
     app.run(debug=True)

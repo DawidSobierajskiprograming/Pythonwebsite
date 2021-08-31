@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Page not finished</title>
+        <title>Contact ME</title>
         <link rel="stylesheet" href="styles.css">
-        <style>
-            #Sorrymain {
-                margin-top: 200px;
-                align-content: center;
-                position: relative;
-            }
-            
-            #sorrytext {
-                font-size: large;
-            }
 
         </style>
     </head>
@@ -20,31 +10,30 @@
         <div class="header">
             <h1 class="bannertext">Dawid Sobierajski</h1>
             <h2 class="bannertext">Programming</h2>
-            <ul class="navbar">
-                <li class="navitem"><a href="index.html">Home</a></li>
-                <li class="navitem"><a href="sorrynotready.html">Projects</a></li>
-                <li class="navitem"><a href="contactpage.html">Contact</a></li>
-            </ul>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Projects & Codewars
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="portfolioproject.html">Personal portfolio website</a>
+                    <a href="sorrynotready.html">42 python projects</a>
+                    <a href="sorrynotready.html">Codewars account</a>
+                  </div>
+                </div>
+                <a href="contactpage.html"> Contact me</a>
+              </div>
         </div>
         <div class="contact">
             <h3>Contact me</h3>
-            <form action="{{url_for('get_contact')}}"" method=post>
-                <div>
-                    <p>
-                        {{form.name.label}} <br>
-                        {{form.name(placeholder="Your name")}}
-                    </p>
-                    <p>
-                        {{form.email.label}} <br>
-                        {{form.email(placeholder="Your e-mail ...")}}
-                    </p>
-                    <p>
-                        {{form.message.label}} <br>
-                        {{form.message(place="Write your message")}}
-                    </p>
-                </div>
-            </form>
-
+            <form action="emailform.php" method="post">
+                First Name: <input type="text" name="first_name"><br>
+                Last Name: <input type="text" name="last_name"><br>
+                Email: <input type="text" name="email"><br>
+                Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                <input type="submit" name="submit" value="Submit">
+                </form>
         </div>
         <div class="footer">
             <p>Copyright 2021-2021 Dawid Sobierajski dawidsobierajski@gmail.com</p>
