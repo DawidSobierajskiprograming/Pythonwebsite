@@ -126,3 +126,8 @@ body {
     float: left;
     margin-top: 20px;
 }
+
+#Education1 {
+  list-style-type: none;
+  display: inline;
+}
